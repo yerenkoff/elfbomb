@@ -12,7 +12,6 @@ html {
   max-width: 1300px;
   height: 100%;
   margin: auto;
-  padding: 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -39,6 +38,10 @@ header {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-bottom: 1px solid #222;
+}
+
+header .container {
+  padding: 0 10px;
 }
 
 header .bag {
@@ -101,7 +104,7 @@ main .container .sectionTitle {
   text-align: center;
   margin: 50px auto 20px;
   color: #fff;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 main .container .card {
@@ -164,17 +167,68 @@ main .container .card .cardInfo h4 {
   margin-bottom: 10px;
 }
 
+main .container .card .cardInfo .counter {
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 5px;
+  margin-top: 0px;
+}
+
+main .container .card .cardInfo .counter input {
+  width: 40px;
+  line-height: 40px;
+  border: 1px solid #111;
+  border-radius: 3px 0 0 3px;
+  border-right: 0;
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+  padding: 0 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main .container .card .cardInfo .counter .counterButtons {
+  float: right;
+}
+
+main .container .card .cardInfo .counter .counterButtons button {
+  line-height: 20px;
+  width: 20px;
+  display: block;
+  font-size: 10px;
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+  border-left: 1px solid #00000055;
+}
+
+main .container .card .cardInfo .counter .counterButtons button:first-child {
+  border-radius: 0 3px 0 0;
+  border-bottom: 0 solid #000;
+}
+
+main .container .card .cardInfo .counter .counterButtons button:last-child {
+  border-radius: 0 0 3px 0;
+  border-top: 0px solid #00000000;
+}
+
+main .container .card .cardInfo > button {
+  min-width: 200px;
+  padding: 0 10px;
+  border-radius: 3px;
+}
+
 main .container .card .cardInfo button {
   background-color: #fff;
   border: 1px solid #111;
-  border-radius: 3px;
   line-height: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 10px;
   font-family: 'Mulish', sans-serif;
   cursor: pointer;
   font-size: 14px;
+  box-sizing: border-box;
+  text-align: center;
+  width: calc(50% - 5px);
 }
 
 main .container .card .cardInfo button:hover {
@@ -183,10 +237,10 @@ main .container .card .cardInfo button:hover {
 }
 
 main .container .card .cardInfo button img {
-  float: left;
   width: 15px;
   height: 40px;
   margin-right: 10px;
+  vertical-align: bottom;
   -o-object-fit: contain;
      object-fit: contain;
 }

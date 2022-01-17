@@ -10,9 +10,48 @@
         <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet"> -->
     </head>
     <body onscroll="bodyScroll()">
+        <div class="container">
+            <div class="bag">
+                <h2>Ваша корзина</h2>
+                <form action="">
+                    <img src="img/bomb0.jpeg" alt="" class="cardImage">
+                    <div class="cardInfo">
+                        <h3>Unicorn Poop</h3>
+                        <h5>Bath Bomb</h5>
+                        <h4 class="price">500 руб.</h4>
+                        <div class="counter">
+                            <button type="button" onclick="counterChange(this)">-</button>
+                            <input type="text" value="1" onkeyup="updateFinalPrice(this)">
+                            <button type="button" onclick="counterChange(this)">+</button>
+                        </div>
+                        <h4 class="finalPrice">1000 руб.</h4>
+                        <button class="removeProduct">
+                            <img src="img/cross.svg" alt="">
+                        </button>
+                    </div>
+                </form>
+                <form action="">
+                    <img src="img/bomb0.jpeg" alt="" class="cardImage">
+                    <div class="cardInfo">
+                        <h3>Unicorn Poop</h3>
+                        <h5>Bath Bomb</h5>
+                        <h4 class="price">500 руб.</h4>
+                        <div class="counter">
+                            <button type="button" onclick="counterChange(this)">-</button>
+                            <input type="text" value="1" onkeyup="updateFinalPrice(this)">
+                            <button type="button" onclick="counterChange(this)">+</button>
+                        </div>
+                        <h4 class="finalPrice">1000 руб.</h4>
+                        <button class="removeProduct">
+                            <img src="img/cross.svg" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
         <header>
             <div class="container">
-                <a class="bag" href="#/">
+                <a class="bagButton" href="#/">
                     <img src="img/bagWhite.svg" alt="">
                 </a>
                 <a class="logo" href="">
@@ -32,302 +71,9 @@
                             <p>Invigorate your imagination</p>
                             <h4>500 руб.</h4>
                             <div class="counter">
+                                <button type="button" onclick="counterChange(this, '+')">-</button>
                                 <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button" onclick="counterChange(this, '+')">⋀</button>
-                                    <button type="button" onclick="counterChange(this, '-')">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
-                            </div>
-                            <button>
-                                <img src="img/bag.svg" alt="">
-                                Добавить в корзину
-                            </button>
-                        </div>
-                    </form>
-                    <form action="" class="card">
-                        <img src="img/bomb1.jpeg" alt="">
-                        <div class="cardInfo">
-                            <h3>Unicorn Poop</h3>
-                            <h5>Bath Bomb</h5>
-                            <p>Invigorate your imagination</p>
-                            <h4>500 руб.</h4>
-                            <div class="counter">
-                                <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button">⋀</button>
-                                    <button type="button">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
-                            </div>
-                            <button>
-                                <img src="img/bag.svg" alt="">
-                                Добавить в корзину
-                            </button>
-                        </div>
-                    </form>
-                    <form action="" class="card">
-                        <img src="img/bomb2.jpeg" alt="">
-                        <div class="cardInfo">
-                            <h3>Unicorn Poop</h3>
-                            <h5>Bath Bomb</h5>
-                            <p>Invigorate your imagination</p>
-                            <h4>500 руб.</h4>
-                            <div class="counter">
-                                <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button">⋀</button>
-                                    <button type="button">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
-                            </div>
-                            <button>
-                                <img src="img/bag.svg" alt="">
-                                Добавить в корзину
-                            </button>
-                        </div>
-                    </form>
-                    <form action="" class="card">
-                        <img src="img/bomb2.jpeg" alt="">
-                        <div class="cardInfo">
-                            <h3>Unicorn Poop</h3>
-                            <h5>Bath Bomb</h5>
-                            <p>Invigorate your imagination</p>
-                            <h4>500 руб.</h4>
-                            <div class="counter">
-                                <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button">⋀</button>
-                                    <button type="button">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
-                            </div>
-                            <button>
-                                <img src="img/bag.svg" alt="">
-                                Добавить в корзину
-                            </button>
-                        </div>
-                    </form>
-                    <form action="" class="card">
-                        <img src="img/bomb1.jpeg" alt="">
-                        <div class="cardInfo">
-                            <h3>Unicorn Poop</h3>
-                            <h5>Bath Bomb</h5>
-                            <p>Invigorate your imagination</p>
-                            <h4>500 руб.</h4>
-                            <div class="counter">
-                                <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button">⋀</button>
-                                    <button type="button">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
-                            </div>
-                            <button>
-                                <img src="img/bag.svg" alt="">
-                                Добавить в корзину
-                            </button>
-                        </div>
-                    </form>
-                    <form action="" class="card">
-                        <img src="img/bomb0.jpeg" alt="">
-                        <div class="cardInfo">
-                            <h3>Unicorn Poop</h3>
-                            <h5>Bath Bomb</h5>
-                            <p>Invigorate your imagination</p>
-                            <h4>500 руб.</h4>
-                            <div class="counter">
-                                <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button">⋀</button>
-                                    <button type="button">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
-                            </div>
-                            <button>
-                                <img src="img/bag.svg" alt="">
-                                Добавить в корзину
-                            </button>
-                        </div>
-                    </form>
-                </section>
-                <section>
-                    <h2 class="sectionTitle">Мыло</h2>
-                    <form action="" class="card">
-                        <img src="img/soap3.jpeg" alt="">
-                        <div class="cardInfo">
-                            <h3>Unicorn Poop</h3>
-                            <h5>Bath Bomb</h5>
-                            <p>Invigorate your imagination</p>
-                            <h4>500 руб.</h4>
-                            <div class="counter">
-                                <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button">⋀</button>
-                                    <button type="button">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
-                            </div>
-                            <button>
-                                <img src="img/bag.svg" alt="">
-                                Добавить в корзину
-                            </button>
-                        </div>
-                    </form>
-                    <form action="" class="card">
-                        <img src="img/soap10.jpg" alt="">
-                        <div class="cardInfo">
-                            <h3>Unicorn Poop</h3>
-                            <h5>Bath Bomb</h5>
-                            <p>Invigorate your imagination</p>
-                            <h4>500 руб.</h4>
-                            <div class="counter">
-                                <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button">⋀</button>
-                                    <button type="button">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
-                            </div>
-                            <button>
-                                <img src="img/bag.svg" alt="">
-                                Добавить в корзину
-                            </button>
-                        </div>
-                    </form>
-                    <form action="" class="card">
-                        <img src="img/soap6.jpg" alt="">
-                        <div class="cardInfo">
-                            <h3>Unicorn Poop</h3>
-                            <h5>Bath Bomb</h5>
-                            <p>Invigorate your imagination</p>
-                            <h4>500 руб.</h4>
-                            <div class="counter">
-                                <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button">⋀</button>
-                                    <button type="button">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
-                            </div>
-                            <button>
-                                <img src="img/bag.svg" alt="">
-                                Добавить в корзину
-                            </button>
-                        </div>
-                    </form>
-                    <form action="" class="card">
-                        <img src="img/soap7.jpg" alt="">
-                        <div class="cardInfo">
-                            <h3>Unicorn Poop</h3>
-                            <h5>Bath Bomb</h5>
-                            <p>Invigorate your imagination</p>
-                            <h4>500 руб.</h4>
-                            <div class="counter">
-                                <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button">⋀</button>
-                                    <button type="button">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
-                            </div>
-                            <button>
-                                <img src="img/bag.svg" alt="">
-                                Добавить в корзину
-                            </button>
-                        </div>
-                    </form>
-                    <form action="" class="card">
-                        <img src="img/soap8.jpg" alt="">
-                        <div class="cardInfo">
-                            <h3>Unicorn Poop</h3>
-                            <h5>Bath Bomb</h5>
-                            <p>Invigorate your imagination</p>
-                            <h4>500 руб.</h4>
-                            <div class="counter">
-                                <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button">⋀</button>
-                                    <button type="button">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
-                            </div>
-                            <button>
-                                <img src="img/bag.svg" alt="">
-                                Добавить в корзину
-                            </button>
-                        </div>
-                    </form>
-                    <form action="" class="card">
-                        <img src="img/soap9.jpg" alt="">
-                        <div class="cardInfo">
-                            <h3>Unicorn Poop</h3>
-                            <h5>Bath Bomb</h5>
-                            <p>Invigorate your imagination</p>
-                            <h4>500 руб.</h4>
-                            <div class="counter">
-                                <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button">⋀</button>
-                                    <button type="button">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
-                            </div>
-                            <button>
-                                <img src="img/bag.svg" alt="">
-                                Добавить в корзину
-                            </button>
-                        </div>
-                    </form>
-                    <form action="" class="card">
-                        <img src="img/soap4.jpeg" alt="">
-                        <div class="cardInfo">
-                            <h3>Unicorn Poop</h3>
-                            <h5>Bath Bomb</h5>
-                            <p>Invigorate your imagination</p>
-                            <h4>500 руб.</h4>
-                            <div class="counter">
-                                <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button">⋀</button>
-                                    <button type="button">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
-                            </div>
-                            <button>
-                                <img src="img/bag.svg" alt="">
-                                Добавить в корзину
-                            </button>
-                        </div>
-                    </form>
-                    <form action="" class="card">
-                        <img src="img/soap5.jpeg" alt="">
-                        <div class="cardInfo">
-                            <h3>Unicorn Poop</h3>
-                            <h5>Bath Bomb</h5>
-                            <p>Invigorate your imagination</p>
-                            <h4>500 руб.</h4>
-                            <div class="counter">
-                                <input type="text" value="1">
-                                <div class="counterButtons">
-                                    <button type="button">⋀</button>
-                                    <button type="button">⋁</button>
-                                    <!-- <button type="button">⌃</button> -->
-                                    <!-- <button type="button">⌃</button> -->
-                                </div>
+                                <button type="button" onclick="counterChange(this, '-')">+</button>
                             </div>
                             <button>
                                 <img src="img/bag.svg" alt="">

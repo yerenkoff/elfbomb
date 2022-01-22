@@ -23,10 +23,14 @@ body {
 
 body > .container {
   position: fixed;
-  height: 0;
+  height: 0px;
   width: 100%;
   top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 4;
+  background-color: #f5f;
 }
 
 a {
@@ -189,8 +193,8 @@ main .container .card > img:hover {
   width: 40px;
   line-height: 40px;
   border: 1px solid #111;
-  border-right: 1px solid #00000055;
-  border-left: 1px solid #00000055;
+  border-right: 1px solid #111;
+  border-left: 1px solid #111;
   font-family: 'Mulish', sans-serif;
   text-align: center;
   padding: 0 5px;
@@ -319,10 +323,12 @@ main .container .card > img:hover {
   border: none;
   min-width: 0;
   border-radius: 20px;
+  padding: 0;
 }
 
 .bag form .cardInfo .removeProduct img {
   -webkit-filter: invert(1);
           filter: invert(1);
+  margin-right: 0;
 }
 /*# sourceMappingURL=style.css.map */

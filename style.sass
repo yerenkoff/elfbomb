@@ -23,10 +23,13 @@ body
     // font-family: 'Raleway', sans-serif
     >.container
         position: fixed
-        height: 0
+        height: 0px
         width: 100%
         top: 0
+        left: 50%
+        transform: translateX(-50%)
         z-index: 4
+        background-color: #f5f
 a
     display: inline-block
     color: #000
@@ -40,8 +43,8 @@ header
     left: 0
     z-index: 5
     transition: 0.3s
-    // background-color: #f65
     // display: flex
+    // background-color: #f65
     // justify-content: space-between
     border-bottom: 1px solid #222
     .container
@@ -163,8 +166,8 @@ main
             line-height: 40px
             border: 1px solid #111
             // border-radius: 3px 0 0 3px
-            border-right: 1px solid #00000055
-            border-left: 1px solid #00000055
+            border-right: 1px solid #111
+            border-left: 1px solid #111
             font-family: 'Mulish', sans-serif
             text-align: center
             padding: 0 5px
@@ -282,15 +285,18 @@ main
             .removeProduct
                 width: 40px
                 height: 40px
-                // background-color: pink
+                // background-color: #fff
                 position: absolute
                 right: 20px
                 top: 20px
                 border: none
                 min-width: 0
                 border-radius: 20px
+                padding: 0
                 img
                     filter: invert(1)
+                    margin-right: 0
+                    // width: 100%
 
         // .bagOptions
             // padding: 20px
